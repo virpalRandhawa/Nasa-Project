@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA_APOD</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link
+    rel="icon"
+    type="image/png"
+    href="https://www.google.com/s2/u/0/favicons?domain=jacinto.design"
+  />
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="loader hidden">
+    <img src="rocket.svg" alt="Rocket Loading Animation">
+    </div>
+    <!-- container -->
+    <div class="container">
+      <!-- Navigation -->
+      <div class="navigation-container">
+        <span class="background"></span>
+        <!-- Results -->
+        <span class="navigation-items" id="resultsNav">
+          <h3 class="clickable" onclick="updateDOM('Favorites')">Favorites</h3>
+          <h3>&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp</h3>
+          <h3  class="clickable" onclick="getNasaPictures()">Load More</h3>
+        </span>
+        <!-- Favorites Nav -->
+        <span class="navigation-items hidden" id="favoritesNav">
+          <h3 class="clickable" onclick="getNasaPictures()">Load More Nasa Images</h3>
+        </span>
+      </div>
+      <!-- Images Container -->
+      <div class="images-container">
+        
+        <!-- <div class="card">
+          <a href="" title="View Full Image" target="_blank">
+            <img src="https://apod.nasa.gov/apod/image/2405/Cederblad111-110.jpg" alt="NASA Picture of the day" class="card-img-top">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Title Of Image</h5>
+            <p class="clickable">Add to Favorites</p>
+            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae animi est odit doloremque! Neque in dolorem modi veniam excepturi culpa, saepe dolor enim facilis ipsam reiciendis repellat earum vel Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni necessitatibus ab ipsa! Explicabo sit, suscipit odit sed iusto eveniet aspernatur eos hic quam autem sapiente non ipsa error libero inventore!              
+            </p>
+            <small class="text-muted">
+              <strong>12-12-2020</strong>
+              <span>Copyright Info</span>
+            </small>
+          </div>
+        </div> -->
+
+      </div>   
+    </div>
+    <!-- Save Confirmation -->
+    <div class="save-confirmed" hidden>
+      <h3>ADDED!</h3>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
